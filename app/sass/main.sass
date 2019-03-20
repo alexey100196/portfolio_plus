@@ -2,78 +2,525 @@
 @import "libs"
 @import "vars"
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video 
-  margin: 0
-  padding: 0
-  border: 0
-  font-size: 100%
-  font: inherit
-  vertical-align: baseline
-  box-sizing: border-box
-ol, ul 
-    list-style: none
+// html, body, div, span, applet, object, iframe,
+// h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+// abbr, acronym, address, big, cite, code,
+// del, dfn, em, img, ins, kbd, q, s, samp,
+// small, strike, strong, sub, sup, tt, var,
+// b, u, i, center,
+// dl, dt, dd, ol, ul, li,
+// fieldset, form, label, legend,
+// table, caption, tbody, tfoot, thead, tr, th, td,
+// article, aside, canvas, details, embed,
+// figure, figcaption, footer, header, hgroup,
+// menu, nav, output, ruby, section, summary,
+// time, mark, audio, video 
+//   margin: 0
+//   padding: 0
+//   border: 0
+//   font-size: 100%
+//   font: inherit
+//   vertical-align: baseline
+//   box-sizing: border-box
+// ol, ul 
+//     list-style: none
 
-a 
-    text-decoration: none
-    color: #000
+// a 
+//     text-decoration: none
+//     color: #000
 
-*
-	-webkit-box-sizing: border-box
-	-moz-box-sizing: border-box
-	box-sizing: border-box
-	&:before, &:after
-		-webkit-box-sizing: border-box
-		-moz-box-sizing: border-box
-		box-sizing: border-box
+// *
+// 	-webkit-box-sizing: border-box
+// 	-moz-box-sizing: border-box
+// 	box-sizing: border-box
+// 	&:before, &:after
+// 		-webkit-box-sizing: border-box
+// 		-moz-box-sizing: border-box
+// 		box-sizing: border-box
 
-*::-webkit-input-placeholder
-	color: #666
-	opacity: 1
+// *::-webkit-input-placeholder
+// 	color: #666
+// 	opacity: 1
 
-*:-moz-placeholder
-	color: #666
-	opacity: 1
+// *:-moz-placeholder
+// 	color: #666
+// 	opacity: 1
 
-*::-moz-placeholder
-	color: #666
-	opacity: 1
+// *::-moz-placeholder
+// 	color: #666
+// 	opacity: 1
 
-*:-ms-input-placeholder
-	color: #666
-	opacity: 1
+// *:-ms-input-placeholder
+// 	color: #666
+// 	opacity: 1
 
-body input:focus:required:invalid,
-body textarea:focus:required:invalid
-	color: #666
-body input:required:valid,
-body textarea:required:valid
-	color: #666
+// body input:focus:required:invalid,
+// body textarea:focus:required:invalid
+// 	color: #666
+// body input:required:valid,
+// body textarea:required:valid
+// 	color: #666
 
-html, body
-  height: 100%
-  font-size: 10px
+// html, body
+//   height: 100%
+//   font-size: 10px
+
+
+a
+  text-decoration: none
+  line-height: 1
+
+ul, ul li
+	list-style: none
+
+body
+	background: #fff
+	min-width: 340px
+	*
+		font-family: "Open Sans", Verdana
+		color: #2c2c2c
+		font-size: 14px
+
+.own-wrapper
+	width: 100%
+	max-width: 1230px
+
+header,section,footer
+	display: flex
+	justify-content: center
+
+
+
+
+
+.wrapper
+	width: 100%
+	max-width: 1020px
+	padding-left: 15px
+	padding-right: 15px   
+ 
+header,section,footer
+	display: flex
+	justify-content: center
+
 
 header
+  height: 85px
   .wrapper
-    nav 
-      ul 
-        li 
-          a 
-            font-size: 13px
-            colo: #666666
+    display: flex
+    justify-content: space-between
+    align-items: center 
+
+a.logo
+nav 
+  ul 
+    display: flex
+    li 
+      margin-left: 30px
+      a    
+        font-family: "Open Sans", Verdana
+        font-size: 14px
+        font-weight: 600
+        color: #666
+        text-decoration: none
+        opacity: .67
+
+.button
+  font-family: "Open Sans", Verdana
+  font-size: 20px
+  font-weight: 600
+  color: #fff
+  text-align: center
+  text-decoration: none
+  padding: 25px 30px
+  border-radius: 8px
+  transition: .3s
+  &:hover
+    transform: scale(1.05)
+  &.green
+    background: #99c50a
+  &.blue
+    background: #26a6d1
+  &.transparent
+    color: rgba(81, 81, 81, .71)
+    background: transparent
+    border: 1px solid rgba(81, 81, 81, .71)
+
+section#banana 
+  background: url(../img/Overlay1.jpg) center no-repeat
+  text-align: center
+  .contetn
+    padding: 170px 0px 160px 0px
+    h1 
+      text-align: center
+      font-family: "Open Sans", Verdana
+      font-weight: 600
+      font-size: 49px 
+      color: #fff
+      font-weight: 600
+      span 
+        font-size: 35px
+        font-weight: normal
+        color: #fff
+    .btn  
+      margin-top: 60px 
+      a 
+        background-color: #99c50a
+        padding: 20px 40px    
+        border-radius: 8px
+        font-family: "Open Sans", Verdana
+        font-size: 19px 
+        color: #fff
+
+section#works  
+  padding: 100px 0
+  text-align: center
+  h2 
+    font-family: "Open Sans", Verdana
+    font-size: 31px
+    color: #515151
+    opacity: 73%
+    margin-top: 40px
+  p 
+    display: block
+    line-height: 1
+    font-family: "Open Sans", Verdana
+    font-size: 19px
+    color: #515151
+   	margin-top: 40px
+    opacity: 73%
+    line-height: 2
+
+.section-project-options
+  .content
+    display: flex
+    .option-item
+      display: flex
+      .number
+        display: block
+        font-size: 20px
+        width: 40px
+        height: 40px
+        background-color: #666666
+        border-radius: 50%
+        position: relative
+        display: flex
+        justify-content: center
+        align-items: center
+        &:before
+          content: '1'
+          color: #fff
+      span
+        font-family: "Open Sans", Verdana
+        font-size: 33px
+        color: #656565              
 
 
 
 
+
+section#tabs
+  .wrapper
+    ul.tabs 
+      display: flex
+      justify-content: space-between
+      border-bottom: 1px solid #e6e6e6
+      li 
+        margin-bottom: -1px
+        display: flex
+        align-items: center
+        padding: 35px 0
+        cursor: pointer
+        border-bottom: 1px solid transparent
+        transition: .3s
+        i 
+          width: 42px
+          height: 42px
+          display: flex
+          align-items: center
+          justify-content: center
+          font-family: "Open Sans", Verdana
+          font-weight: 600
+          font-size: 20px
+          border-radius: 50%
+          color: #fff
+          background: #5f5f5f
+          transition: .3s
+        span 
+          font-family: "Open Sans", Verdana
+          font-size: 32px
+          color: #656565
+          margin-left: 30px  
+    .tabs-content
+      padding: 50px 0
+      .item
+        display: flex
+        justify-content: space-between
+        align-items: center
+        outline: none
+        .img-container
+          width: 100%
+          max-width: 280px
+          height: 100%
+          display: flex
+          justify-content: center
+          align-items: center        
+        .text
+          width: 100%
+          max-width: 650px
+          display: flex
+          flex-direction: column
+          span 
+            font-family: "Open Sans", Verdana
+            font-size: 25px
+            color: #add136
+          p
+            margin-top: 35px
+            font-family: "Open Sans", Verdana
+            font-size: 18px
+            color: #606060
+            opacity: .67
+            line-height: 1.8
+
+section#two_blocks
+	overflow: hidden
+	.wrapper
+		display: flex
+		// flex-wrap: wrap
+		.items
+			position: relative
+			width: 50%
+			padding: 40px 0
+			display: flex
+			flex-wrap: flex-wrap
+			align-items: center
+			&.left
+				padding-right: 40px
+				&:after
+					content: ''
+					width: 100vw
+					height: 100%
+					background: #a5e9ff
+					position: absolute
+					right: 0
+					top: 0
+					bottom: 0
+					z-index: -1
+			&.right
+				padding-left: 40px
+				&:after
+					content: ''
+					width: 100vw
+					height: 100%
+					background: #f5f9eb
+					position: absolute
+					left: 0
+					top: 0
+					bottom: 0
+					z-index: -1
+			.text
+				margin-left: 40px
+				width: calc(100% - 175px)
+				display: flex
+				flex-direction: column
+				align-items: flex-start
+				span
+					font-size: 24px
+					color: #515151
+					margin-bottom: 30px
+				p
+          font-family: "Open Sans", Verdana
+          font-size: 17px
+          color: #515151
+          line-height: 1.8
+          margin-bottom: 30px
+				a
+					padding: 20px 25px
+
+section#projects
+  .wrapper 
+    h2 
+      font-family: "open-sans", Verdana
+      font-size: 29px
+      color: #515151
+    p 
+      font-family: "Open Sans", Verdana
+      font-size: 17px
+      color: #8f8f8f      
+      line-height: 2
+    .project
+      max-width: 300px
+      position: relative
+      overflow: hidden
+      border-radius: 12px
+      .img-effects
+        width: 300px
+        overflow: hidden
+        display: blcok
+      &:before
+        content: 'NEW'
+        transform: translate(100px)
+        color: #fff
+        padding-bottom: 8px
+        display: flex
+        justify-content: center
+        align-items: flex-end
+        position: absolute
+        top: -60px
+        left: -65px
+        width: 110px
+        height: 110px
+        background-color: #add136
+        transform: rotate(-50deg)
+        z-index: 1
+        cursor: pointer
+      &:after
+        content: "From GBP 3600"
+        color: #fff
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 140px
+        height: 35px
+        background-color: #26a6d1
+        border-radius: 4px
+        z-index: 1
+        position: absolute
+        top: 168px
+        right: 34px
+        cursor: pointer
+      img 
+        width: 100%	
+        transform: scale(1)
+        transition: 4s ease-in-out
+      img:hover 
+        transform: scale(1.5)
+      .content  
+        border: 2px solid #e5e5e5
+        border-top: none
+        background-color: #f9f9f9
+        padding: 30px 20px 25px 20px
+        h3
+          font-family: "Open Sans", Verdana
+          font-size: 17px
+          color: #484848      
+          line-height: 2  
+          margin: 0          
+        p 
+          font-family: "Open Sans", Verdana
+          font-size: 13px
+          color: #484848   
+          opacity: 0.70   
+          line-height: 2  
+          margin: 15px 0 20px 0    
+        span 
+          font-family: "Open Sans", Verdana
+          font-size: 13px
+          color: #8d8d8d
+        #count-day
+          padding-left: 110px   
+        a 
+          display: block  
+          font-family: "Open Sans", Verdana
+          font-size: 15px
+          opacity: 0.85
+          color: #484848   
+          text-align: center
+          border-top: 2px solid #ededed
+          padding-top: 27px  
+          margin-top: 20px      
+
+
+
+section#community 
+  background: url(../img/bg.png) center no-repeat
+  text-align: center
+  .wrapper
+    h2 
+      font-family: "Open Sans", Verdana
+      font-size: 39px
+      color: #9ec02d
+      margin-top: 180px
+    span 
+      font-family: "Open Sans", Verdana
+      font-size: 19px
+      color: #949494
+    .reviews
+      margin: 90px 0 70px
+      display: flex
+      justify-content: space-between
+      .comment
+        max-width: 430px
+        background: #fff
+        border-radius: 9px
+        position: relative
+        &:after
+          content: ' '
+          display: block
+          border: 27px solid transparent
+          border-left: 25px solid #fff
+          border-top: 0px solid #fff
+          position: absolute
+          bottom: -27px
+          left: 80px
+        h3 
+          font-family: "Open Sans", Verdana
+          font-size: 21px
+          color: #9ec02d
+          padding: 17px 0px 11px 0px
+          margin: 0
+        p 
+          font-family: "Open Sans", Verdana
+          font-size: 13px
+          color: #848484  
+          line-height: 2
+          margin: 0
+          padding: 0 35px 25px 35px
+      .person  
+        display: flex
+        align-items: center
+        margin-top: 35px
+        img 
+          padding-left: 45px
+        span 
+          font-family: "Open Sans", Verdana
+          font-size: 15px
+          color: #494949
+          padding-left: 30px
+
+section#sponsor 
+  .wrapper
+    img 
+      padding: 40px 0 50px 0
+
+footer 
+  span
+    width: 100%
+    text-align: center
+    border-top: 2px solid #ededed
+    padding: 30px 0 20px 0
+
+.popup
+  width: 100%
+  height: 100%
+  position: fixed
+  top: 0
+  right: 0
+  left: 0
+  bottom: 0
+  background: rgba(0,0,0, .7)
+  z-index: 10
+  display: flex
+  justify-content: center
+  align-items: center
+  .content
+    width: 90%
+    max-width: 500px
+    background: #fff
+    height: 100px
+    span.close 
+    span.X
+.closed 
+  display: none !important 
+.opened
+  displey: block

@@ -31,42 +31,226 @@
   <!-- iOS Safari -->
   <meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
-  <link rel="stylesheet" href="css/main.min.css">
+  <link href="css/fonts.css" rel="stylesheet" />
+  <link href="css/main.min.css" rel="stylesheet">
 
 </head>
 
 <body>
+
   <header>
     <div class="wrapper">
-      <a href="/">
-        <img src="img/logo.png" alt="logo">
+      <a href="/" class="logo">
+        <img src="img/logo.png">
       </a>
 
       <nav>
         <ul>
-          <li>
-          <li>
-            <a href="">HOME</a>
-          </li>
-          <li>
-            <a href="">HOW IT WORKS</a>
-          </li>
-          <li>
-            <a href="">DISCOVER A PROJECT</a>
-          </li>
-          <li>
-            <a href="">BLOG</a>
-          </li>
-          <li>
-            <a href="">FIND OUT MORE</a>
-          </li>
-
-          </li>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#how">HOW IT WORKS</a></li>
+          <li><a href="#projects">DISCOVER A PROJECT</a></li>
+          <li><a href="#blog">BLOG</a></li>
+          <li><a href="#find">FIND OUT MORE</a></li>
         </ul>
       </nav>
     </div>
   </header>
+  <!-- /header -->
 
+
+
+  <section id="banana">
+    <div class="contetn">
+      <h1>Intellectual Property has the Shelf Life <br>
+        <span>of a Banana</span>.
+      </h1>
+      <div class="btn">
+        <a href="#" class="button green">Become a Member</a>
+        <a href="#" class="button green">Submit Your Project</a>
+      </div>
+    </div>
+  </section>
+  <!-- /section-banana -->
+
+  <section id="works">
+    <div class="wrapper">
+      <h2>Our work is the presentation
+        of our capabilities.
+      </h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+      </p>
+      <p> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </div>
+  </section>
+  <!-- /.section-works -->
+
+  <section id="tabs">
+    <div class="wrapper">
+      <ul class="tabs">
+        <li data-index="1">
+          <i>1</i>
+          <span>Заголовок 1</span>
+        </li>
+        <li data-index="2">
+          <i>2</i>
+          <span>Заголовок 2</span>
+        </li>
+        <li data-index="3">
+          <i>3</i>
+          <span>Заголовок 3</span>
+        </li>
+      </ul>
+      <div class="tabs-content">
+        <div class="item" data-index="1">
+          <div class="img-container">
+            <img src="img/glasses.png">
+          </div>
+          <div class="text">
+            <span>Browse projects, like booking a hotel online ! 1 </span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              do lore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat.</p>
+          </div>
+        </div>
+        <div class="item closed" data-index="2">
+          <div class="img-container">
+            <img src="img/glasses.png">
+          </div>
+          <div class="text">
+            <span>Browse projects, like booking a hotel online ! 2</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              do lore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat.</p>
+          </div>
+        </div>
+        <div class="item closed" data-index="3">
+          <div class="img-container">
+            <img src="img/glasses.png">
+          </div>
+          <div class="text">
+            <span>Browse projects, like booking a hotel online ! 3</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              do lore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- /.section-project-options -->
+
+  <section id="two_blocks">
+    <div class="wrapper">
+      <div class="items left">
+        <img src="img/Vector-Smart-Object.png">
+        <div class="text">
+          <span>Find Properties</span>
+          <p>Sign up to browse the portfolio. <br>Your journey to becoming a real estate baron starts here.</p>
+          <a href="#" class="button blue">Become A Member</a>
+        </div>
+      </div>
+      <div class="items right">
+        <img src="img/Vector-Smart-Object1.png">
+        <div class="text">
+          <span>Find Buyers</span>
+          <p>Sign up to browse the portfolio. <br>Your journey to becoming a real estate baron starts here.</p>
+          <a href="#" class="button green">Submit Your Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /.section-two-blocks -->
+
+  <section id="projects">
+    <div class="wrapper">
+      <h2>Featured Projects</h2>
+      <p>Brief details of new and popular projects. To view full listings, you will be required to <br>
+        sign up and become a member.</p>
+      <div class="project">
+        <div class="img-effects">
+          <img src="img/Layer-161.png" alt="">
+        </div>
+
+
+        <div class="content">
+          <h3>Ontario Tower , LONDON</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</p>
+
+          <span>10% Funded</span> <span id="count-day">8 Days Left</span>
+
+          <a href="#">See Project Details</a>
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </section>
+  <!-- /section#projects -->
+
+  <section id="community">
+    <div class="wrapper">
+      <h2>Be Part of a Growing International Community</h2>
+      <span>One of the challenges in networking is everybody thinks it's making cold calls to strangers. Actually, it's
+        the people who already have strong trust relationships with you</span>
+      <div class="reviews">
+        <div class="feedback">
+          <div class="comment">
+            <h3>One of the Best </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing <br> elit, sed do eiusmod taempor incididunt ut
+              labore
+              et
+              dolore magna aliqua.</p>
+          </div>
+          <div class="person">
+            <img src="img/person1.png" alt="">
+            <span>David Beckham</span>
+          </div>
+        </div>
+        <div class="feedback">
+          <div class="comment">
+            <h3>One of the Best </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing <br> elit, sed do eiusmod taempor incididunt ut
+              labore
+              et
+              dolore magna aliqua.</p>
+          </div>
+          <div class="person">
+            <img src="img/person1.png" alt="">
+            <span>David Beckham</span>
+          </div>
+        </div>
+      </div>
+      <!-- /.reviews -->
+    </div>
+  </section>
+  <!-- /section.community -->
+
+  <section id="sponsor">
+    <div class="wrapper">
+      <img src="img/Layer-25.png" alt="">
+    </div>
+  </section>
+  <!-- /section.sponsor -->
+
+  <footer>
+    <span>Copyright © 2001 - <span class="js_year"></span> <a href="mailto:alexeysoboloev071@gmail.com">alexeysobolev071@gmail.com</a></span>
+  </footer>
+
+  <div id="timeput" class="popup closed">
+    <div class="content">
+      <span id="close">X</span>
+      <span class="test">test</span>
+    </div>
+  </div>
 </body>
-
+  <script src="/app/libs/jquery/jquery.min.js"></script>
+  <script src="/app/js/common.min.js"></script>
 </html>
